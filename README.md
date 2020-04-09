@@ -50,6 +50,10 @@ The Chicago and New York City files also have the following two columns:
 *counts of each user type
 *counts of each gender
 *earliest, most recent, most common year of birth
+## Software used in the Project
+*Python 3, NumPy, and pandas installed using Anaconda
+*Atom Text Editor
+*Git Bash Terminal
 
 ## Credits
 *Lessons in the Udacity's Programming For Data Science Nanodegree
