@@ -28,20 +28,22 @@ def get_filters():
     while True:
         date_filter = input('Would you like to filter the data by month, day, both or not at all? Type "none" for no time filter \n').lower()
         if date_filter == 'month':
-            # TO DO: get user input for month (all, january, february, ... , june)
+            #get user input for month (all, january, february, ... , june)
             month = get_inputs('Which month? January, February, March, April, May, or June? \n', months)
             day = 'all'
             break
         elif date_filter == 'day':
             month = 'all'
-            # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+            #get user input for day of week (all, monday, tuesday, ... sunday)
             day = get_inputs('Which day? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday? \n', days)
             break
         elif date_filter == 'both':
+            #get the user input for both month and day of week and filter the data by them
             month = get_inputs('Which month? January, February, March, April, May, or June? \n', months)
             day = get_inputs('Which day? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday? \n', days)
             break
         elif date_filter == 'none':
+            #use no filter for the data
             month = 'all'
             day = 'all'
             break
