@@ -98,15 +98,15 @@ def time_stats(df):
 
     # TO DO: display the most common month
     popular_month = df['month'].mode()[0]
-    print('\nThe Most Popular Month: ', popular_month)
+    print('\nThe Most Popular Month: {}'.format(popular_month))
 
     # TO DO: display the most common day of week
     popular_day = df['day_of_week'].mode()[0]
-    print('\nThe Most Popular Day: ', popular_day)
+    print('\nThe Most Popular Day: {}'.format(popular_day))
 
     # TO DO: display the most common start hour
     popular_hour = df['hour'].mode()[0]
-    print('\nThe Most Popular Hour: ', popular_hour)
+    print('\nThe Most Popular Hour: {}'.format(popular_hour))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -120,16 +120,16 @@ def station_stats(df):
 
     # TO DO: display most commonly used start station
     popular_start_station = df['Start Station'].mode()[0]
-    print('\nThe Most Popular Start Station: ', popular_start_station)
+    print('\nThe Most Popular Start Station: {}'.format(popular_start_station))
 
     # TO DO: display most commonly used end station
     popular_end_station = df['End Station'].mode()[0]
-    print('\nThe Most Popular End Station: ', popular_end_station)
+    print('\nThe Most Popular End Station: {}'.format(popular_end_station))
 
     # TO DO: display most frequent combination of start station and end station trip
     df['trip'] = 'From '+ df['Start Station'] +' To '+ df['End Station']
     popular_trip = df['trip'].mode()[0]
-    print('\nThe Most Popular Trip: ', popular_trip)
+    print('\nThe Most Popular Trip: {}'.format(popular_trip))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -143,11 +143,11 @@ def trip_duration_stats(df):
 
     # TO DO: display total travel time
     total_travel_time = df['Trip Duration'].sum()
-    print('\nTotal Trip Duration: ', total_travel_time)
+    print('\nTotal Trip Duration: '.format(total_travel_time))
 
     # TO DO: display mean travel time
     average_travel_time = df['Trip Duration'].mean()
-    print('\nAverage Trip Duration: ', average_travel_time)
+    print('\nAverage Trip Duration: '.format(average_travel_time))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
